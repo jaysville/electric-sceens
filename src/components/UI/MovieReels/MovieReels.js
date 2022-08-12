@@ -27,16 +27,32 @@ const MovieReels = (props) => {
     <Wrapper>
       <h4 className={classes.title}>{title}</h4>
       <Swiper
-        slidesPerGroup={5}
         slidesPerView={5}
+        slidesPerGroup={5}
         slidesPerGroupSkip={1}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         grabCursor={true}
         navigation={true}
-        pagination={{ clickable: true }}
-        a11y={true}
         loop={true}
+        pagination={{ clickable: true }}
         speed={1000}
+        breakpoints={{
+          1000: {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+          },
+          750: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+          0: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+          },
+        }}
+        keyboard={{
+          enabled: true,
+        }}
       >
         {movies &&
           movies.map(

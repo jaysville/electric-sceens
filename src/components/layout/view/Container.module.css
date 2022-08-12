@@ -1,6 +1,5 @@
 .container {
   object-fit: cover;
-  margin-left: 55px;
   display: flex;
   flex-direction: column;
   overflow: hidden;

@@ -14,6 +14,7 @@ import {
 
 const Home = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getSectionOne());
     dispatch(getSectionTwo());

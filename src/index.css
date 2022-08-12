@@ -27,12 +27,6 @@ code {
   display: flex;
   align-items: center;
 }
-@media (min-width: 700px) {
-  .swiper {
-    width: 80%;
-    overflow: wrap;
-  }
-}
 
 .swiper-button-prev,
 .swiper-button-next {

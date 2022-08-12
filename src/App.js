@@ -12,7 +12,6 @@ import Footer from "./components/layout/footer/Footer";
 function App() {
   return (
     <div className="App">
-      <Sidebar />
       <Container>
         <Routes>
           <Route path="/" exact element={<Home />} />
