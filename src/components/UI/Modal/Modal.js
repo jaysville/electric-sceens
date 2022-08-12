@@ -1,7 +1,7 @@
 import classes from "./Modal.module.css";
 import { createPortal } from "react-dom";
 import PlayBtn from "../Button/PlayBtn";
-import Fade from "../MovieReels/Fade/Fade";
+import Fade from "../Fade/Fade";
 import {
   addToFavorites,
   removeFromFavorites,
