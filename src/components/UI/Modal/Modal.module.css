@@ -1,0 +1,69 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.571);
+}
+
+.modal {
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(20, 20, 20);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 300;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@media (max-width: 690px) {
+  .modal {
+    width: 70vw;
+    left: 54%;
+  }
+}
+.img {
+  border-radius: 14px;
+  width: 100%;
+}
+.main {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.info {
+  position: absolute;
+  bottom: 7%;
+  left: 1rem;
+  z-index: 10;
+}
+.info h2 {
+  font-weight: bold;
+}
+
+.closeBtn {
+  position: absolute;
+  background-color: #201e1ea8;
+  border: none;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  color: aliceblue;
+  top: 10px;
+  right: 10px;
+  z-index: 5000;
+}
+.content {
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.content p {
+  color: #089e08;
+  font-weight: bold;
+  display: inline-block;
+}

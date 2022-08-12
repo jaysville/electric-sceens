@@ -1,0 +1,14 @@
+.container {
+  object-fit: cover;
+  margin-left: 55px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}

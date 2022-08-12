@@ -1,0 +1,14 @@
+.fade {
+  height: 10em;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(15, 15, 15, 0.61),
+    #141414
+  );
+  z-index: 3;
+  width: 100%;
+  border: none;
+}
