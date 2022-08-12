@@ -20,12 +20,6 @@
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (max-width: 690px) {
-  .modal {
-    width: 70vw;
-    left: 54%;
-  }
-}
 .img {
   border-radius: 14px;
   width: 100%;
