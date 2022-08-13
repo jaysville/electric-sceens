@@ -4,13 +4,13 @@ import { useState } from "react";
 import Modal from "../components/UI/Modal/Modal";
 
 export const MovieBox = styled.div`
-  width: 250px;
+  width: 200px;
   display: block;
   padding: 0;
   :hover {
     transform: scale(1.1);
   }
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
     width: 150px;
   }
   img {
@@ -24,15 +24,16 @@ export const MovieBox = styled.div`
 export const Wrapper = styled.div`
   margin-top: 10px;
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(3, 1fr);
-
-  @media (max-width: 750px) {
+  grid-gap: 8px;
+  @media (max-width: 425px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     grid-template-columns: repeat(5, 1fr);
+    margin-left: 150px;
   }
-  grid-gap: 8px;
 `;
 export const P = styled.p`
   position: fixed;

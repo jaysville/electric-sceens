@@ -6,17 +6,7 @@
   z-index: 10000;
   transition: all 170ms ease-in-out;
 }
-@media (max-width: 800px) {
-  .sidebar {
-    display: none;
-  }
-}
-.open {
-  transform: translateX(30px);
-}
-.close {
-  width: 55px;
-}
+
 .toggler {
   width: 50px;
   background-color: transparent;
@@ -25,6 +15,21 @@
   margin: 50px 0;
   cursor: pointer;
   transition: all 170ms ease-in;
+  display: none;
+}
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+  .toggler {
+    display: block;
+  }
+}
+.open {
+  transform: translateX(30px);
+}
+.close {
+  width: 55px;
 }
 .icon {
   font-size: 25px;
@@ -38,6 +43,7 @@
   height: auto;
   width: 100%;
   padding: 0;
+  margin-top: 10vh;
 }
 
 .sidebar-list .row {
