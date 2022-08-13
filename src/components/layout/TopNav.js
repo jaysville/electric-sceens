@@ -33,11 +33,9 @@ const TopNavStyle = styled.div`
 const TopNav = (props) => {
   return (
     <TopNavStyle onClick={props.onShowNav}>
-      {!props.showNav && (
-        <button>
-          <i className="fa fa-bars " aria-hidden="true" />
-        </button>
-      )}
+      <button>
+        <i className="fa fa-bars " aria-hidden="true" />
+      </button>
 
       <h3>Electric Screens</h3>
     </TopNavStyle>

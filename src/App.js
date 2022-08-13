@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Sidebar showNav={showNav} onHideNav={hideNavHandler} />
       <Container>
-        <TopNav onShowNav={showNavHandler} showNav={showNav} />
+        <TopNav onShowNav={showNavHandler} />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/movies" element={<Movies />} />
