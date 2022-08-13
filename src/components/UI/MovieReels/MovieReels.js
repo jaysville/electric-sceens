@@ -9,11 +9,18 @@ import styled from "styled-components";
 import Modal from "../Modal/Modal";
 
 const WrapperStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 5px;
-  text-align: center;
+  margin-bottom: 10px;
+
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+  overflow: hidden;
+  height: fit-content;
+  align-self: center;
+
+  h4 {
+    margin-left: 5%;
+  }
 `;
 const Wrapper = (props) => {
   return <WrapperStyle>{props.children}</WrapperStyle>;
@@ -38,12 +45,12 @@ const MovieReels = (props) => {
         speed={1000}
         breakpoints={{
           1000: {
-            slidesPerView: 5,
             slidesPerGroup: 5,
+            slidesPerView: 5,
           },
           750: {
-            slidesPerView: 4,
-            slidesPerGroup: 4,
+            slidesPerView: 5,
+            slidesPerGroup: 5,
           },
           0: {
             slidesPerGroup: 3,

@@ -21,9 +21,6 @@ const Form = styled.form`
   }
 `;
 
-const Block = styled.div`
-  height: 75vh;
-`;
 const Search = () => {
   const [input, setInput] = useState("");
   const [startSearch, setStartSearch] = useState(false);
@@ -112,7 +109,7 @@ const Search = () => {
   }
 
   return (
-    <Wrapper className="search">
+    <>
       <Form>
         <input
           type="text"
@@ -129,8 +126,8 @@ const Search = () => {
           }}
         />
       )}
-      <Block>{isLoading ? <Loader /> : content}</Block>
-    </Wrapper>
+      <Wrapper>{isLoading ? <Loader /> : content}</Wrapper>
+    </>
   );
 };
 export default Search;

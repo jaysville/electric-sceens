@@ -6,6 +6,11 @@
   z-index: 10000;
   transition: all 170ms ease-in-out;
 }
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
 .open {
   transform: translateX(30px);
 }

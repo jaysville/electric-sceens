@@ -4,16 +4,14 @@ import { useState } from "react";
 import Modal from "../components/UI/Modal/Modal";
 
 export const MovieBox = styled.div`
-  width: 200px;
-  margin: 5px 10px;
-  display: inline-block;
+  width: 250px;
+  display: block;
   padding: 0;
   :hover {
     transform: scale(1.1);
   }
-  @media (max-width: 600px) {
-    width: 120px;
-    margin: 5px 10px;
+  @media (max-width: 900px) {
+    width: 150px;
   }
   img {
     border-radius: 6px;
@@ -24,8 +22,17 @@ export const MovieBox = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  height: ${(props) => (props.className === "search" ? "auto" : "100vh")};
-  margin-top: 5%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  grid-gap: 8px;
 `;
 export const P = styled.p`
   position: fixed;

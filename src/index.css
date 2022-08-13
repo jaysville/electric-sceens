@@ -21,13 +21,15 @@ code {
 
 .swiper {
   overflow: visible !important ;
-  width: 100%;
+  width: 90vw;
   margin: 10px 0;
   height: fit-content;
-  display: flex;
-  align-items: center;
 }
-
+@media (min-width: 800px) {
+  .swiper {
+    width: 95%;
+  }
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff !important;
