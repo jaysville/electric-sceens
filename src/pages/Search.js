@@ -35,7 +35,6 @@ const Search = () => {
   };
 
   const search = useCallback(async () => {
-    setIsLoading(true);
     if (input.trim().length === 0) {
       return;
     }
