@@ -4,6 +4,7 @@ const TopNavStyle = styled.div`
   width: 100%;
   align-self: center;
   position: fixed;
+  padding: 3px;
   top: 0;
   background-color: #2b2b2b;
   z-index: 2000000000;
@@ -11,7 +12,6 @@ const TopNavStyle = styled.div`
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   button {
-    margin-left: 4%;
     border: none;
     background-color: transparent;
     color: aliceblue;
