@@ -18,7 +18,7 @@ const TopNavStyle = styled.div`
     background-color: transparent;
     color: aliceblue;
     font-size: 30px;
-    padding: 3px;
+    margin-left: 5px;
   }
   h3 {
     margin-left: auto;
