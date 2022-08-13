@@ -19,6 +19,11 @@ code {
     monospace;
 }
 
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
 .swiper {
   overflow: visible !important ;
   width: 95vw;

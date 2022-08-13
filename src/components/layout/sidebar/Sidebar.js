@@ -3,12 +3,16 @@ import sidebarData from "./SidebarData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [isActive, setIsActive] = useState(window.location.pathname);
 
   return (
-    <nav className={`${classes.sidebar} `}>
-      <button className={`${classes.toggler}`}>
+    <nav
+      className={`${classes.sidebar} ${
+        props.showNav && classes.showNav
+      } animate__animated animate__fadeInLeft`}
+    >
+      <button className={`${classes.toggler}`} onClick={props.onHideNav}>
         <i className={`fa fa-times ${classes.icon}`} aria-hidden="true" />
       </button>
       <ul className={classes["sidebar-list"]}>
@@ -20,6 +24,7 @@ const Sidebar = () => {
               key={i}
               onClick={() => {
                 setIsActive(link);
+                props.onHideNav();
               }}
             >
               <li

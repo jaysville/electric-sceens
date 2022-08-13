@@ -2,7 +2,6 @@
   object-fit: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow: hidden;
   margin-top: 50px;
   width: 100%;

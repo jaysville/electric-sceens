@@ -3,7 +3,7 @@
   width: 150px;
   background-color: #2b2b2b;
   position: fixed;
-  z-index: 10000;
+  z-index: 100000000000;
   transition: all 170ms ease-in-out;
 }
 
@@ -12,10 +12,11 @@
   background-color: transparent;
   color: rgb(117, 144, 144);
   border: none;
-  margin: 50px 0;
+  margin: 50px auto;
   cursor: pointer;
   transition: all 170ms ease-in;
   display: none;
+  transform: translateY(50px);
 }
 @media (max-width: 800px) {
   .sidebar {
@@ -25,12 +26,7 @@
     display: block;
   }
 }
-.open {
-  transform: translateX(30px);
-}
-.close {
-  width: 55px;
-}
+
 .icon {
   font-size: 25px;
 }
@@ -38,7 +34,9 @@
 .hidden {
   display: none;
 }
-
+.showNav {
+  display: block;
+}
 .sidebar-list {
   height: auto;
   width: 100%;

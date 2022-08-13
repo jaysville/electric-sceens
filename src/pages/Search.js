@@ -19,6 +19,7 @@ const Form = styled.form`
     padding: 5px;
     font-weight: small;
   }
+  margin-top: 2rem;
 `;
 
 const Search = () => {
