@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   @media (max-width: 425px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 150px;
   }
