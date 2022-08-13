@@ -39,7 +39,7 @@ const TopNav = (props) => {
         <i className="fa fa-bars " aria-hidden="true" />
       </button>
 
-      <h3>Electric Screens</h3>
+      <h3>Electric Screen</h3>
     </TopNavStyle>
   );
 };
