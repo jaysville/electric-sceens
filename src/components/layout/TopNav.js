@@ -18,13 +18,14 @@ const TopNavStyle = styled.div`
     background-color: transparent;
     color: aliceblue;
     font-size: 30px;
-    margin-left: 5px;
+    margin-left: 3px;
   }
   h3 {
     margin-left: auto;
     align-self: center;
     padding: 0 5px;
     font-family: josefin-sans, sans-serif;
+    margin-right: 5px;
   }
   @media (min-width: 1000px) {
     display: none;
