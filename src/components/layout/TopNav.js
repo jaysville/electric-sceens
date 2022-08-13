@@ -4,7 +4,7 @@ const TopNavStyle = styled.div`
   width: 100%;
   align-self: center;
   position: fixed;
-  padding: 3px;
+
   top: 0;
   background-color: #2b2b2b;
   z-index: 2000000000;
@@ -18,6 +18,7 @@ const TopNavStyle = styled.div`
     background-color: transparent;
     color: aliceblue;
     font-size: 30px;
+    padding: 3px;
   }
   h3 {
     margin-left: auto;
@@ -25,15 +26,15 @@ const TopNavStyle = styled.div`
     padding: 0 5px;
     font-family: josefin-sans, sans-serif;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 `;
 
 const TopNav = (props) => {
   return (
-    <TopNavStyle onClick={props.onShowNav}>
-      <button>
+    <TopNavStyle>
+      <button onClick={props.onShowNav}>
         <i className="fa fa-bars " aria-hidden="true" />
       </button>
 

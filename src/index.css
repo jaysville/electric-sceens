@@ -30,7 +30,7 @@ code {
   margin: 10px 0;
   height: fit-content;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .swiper {
     width: 95%;
   }

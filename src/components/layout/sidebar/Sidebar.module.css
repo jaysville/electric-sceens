@@ -4,7 +4,6 @@
   background-color: #2b2b2b;
   position: fixed;
   z-index: 100000000000;
-  transition: all 170ms ease-in-out;
 }
 
 .toggler {
@@ -18,7 +17,7 @@
   display: none;
   transform: translateY(50px);
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .sidebar {
     display: none;
   }
