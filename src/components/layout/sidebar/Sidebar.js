@@ -1,11 +1,8 @@
 import classes from "./Sidebar.module.css";
 import sidebarData from "./SidebarData";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = (props) => {
-  const [isActive, setIsActive] = useState(window.location.pathname);
-
   return (
     <nav
       className={`${classes.sidebar} ${
@@ -18,20 +15,16 @@ const Sidebar = (props) => {
       <ul className={classes["sidebar-list"]}>
         {sidebarData.map(({ title, icon, link }, i) => {
           return (
-            <Link
+            <NavLink
+              activeClassName={classes.active}
               style={{ textDecoration: "none" }}
               to={link}
               key={i}
               onClick={() => {
-                setIsActive(link);
                 props.onHideNav();
               }}
             >
-              <li
-                className={`${classes.row} ${
-                  isActive === link && classes.active
-                }`}
-              >
+              <li className={classes.row}>
                 <div className={classes["sidebar-icon"]}>{icon}</div>
                 <div
                   className={` animate__animated animate__fadeInUp ${classes["sidebar-title"]} `}
@@ -39,7 +32,7 @@ const Sidebar = (props) => {
                   {title}
                 </div>
               </li>
-            </Link>
+            </NavLink>
           );
         })}
       </ul>
