@@ -1,7 +1,6 @@
 .container {
   display: flex;
   justify-content: center;
-
   margin-bottom: 5%;
   padding: 0;
   width: 100%;
@@ -18,7 +17,6 @@
   position: relative;
 }
 .img {
-  border-radius: 10px;
   width: 100%;
 }
 .fade {
@@ -83,6 +81,10 @@
   .wrapper {
     width: 90%;
   }
+  .img {
+    border-radius: 10px;
+  }
+
   .actions h2 {
     font-size: 50px;
   }

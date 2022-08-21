@@ -6,7 +6,7 @@ const TopNavStyle = styled.div`
   position: fixed;
 
   top: 0;
-  background-color: #2b2b2b;
+  background-color: #212529;
   z-index: 2000000000;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
@@ -18,7 +18,6 @@ const TopNavStyle = styled.div`
     background-color: transparent;
     color: aliceblue;
     font-size: 30px;
-    margin-left: 3px;
   }
   h3 {
     margin-left: auto;
@@ -26,6 +25,8 @@ const TopNavStyle = styled.div`
     padding: 0 5px;
     font-family: josefin-sans, sans-serif;
     margin-right: 5px;
+    color: bisque;
+    font-family: "handlee", sans-serif;
   }
   @media (min-width: 1000px) {
     display: none;
