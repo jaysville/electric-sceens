@@ -11,7 +11,7 @@ export const MovieBox = styled.div`
     transform: scale(1.1);
   }
   @media (max-width: 700px) {
-    width: 150px;
+    width: 110px;
   }
   img {
     border-radius: 6px;
